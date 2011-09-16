@@ -1,9 +1,6 @@
-Prerequisite Knowledge / Conventions Used
-=========================================
+# Prerequisite Knowledge / Conventions Used
 
-Prerequisite Knowledge
-----------------------
-
+### Prerequisite Knowledge
 * You should know basic Ruby syntax.
 
 * Bourne shell knowledge will be useful, but not required.
@@ -21,9 +18,8 @@ Prerequisite Knowledge
     \# You should understand why the following statements are true:<br \>
     "this is a string!" == b
     "this is a string" != b
-    
-Notations/Conventions
----------------------
+
+### Notations/Conventions
 * Ruby method documentation references (should be the same as Ruby documentation)
 
  - IO.pipe -- class/singleton method
@@ -41,5 +37,4 @@ Notations/Conventions
 That's all I can think of for now...
 
 
->>License: GPLv3 (or later, at the discretion of Eric Wong)
->>http://www.gnu.org/licenses/gpl-3.0.txt
+## License: GPLv3 (or later, at the discretion of Eric Wong) http://www.gnu.org/licenses/gpl-3.0.txt
