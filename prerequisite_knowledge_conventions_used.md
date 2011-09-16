@@ -9,15 +9,15 @@
 
 * You must know that that two (or more) variables (in Ruby) can refer to the same underlying object.  This concept is present in Unix, so it is /very/ important one understand this:
 
-    a = "this is a string"
-    b = a      \# 'b' refers to the same String object as 'a' <br \>
-    a << "!"   \# modifies the String object 'a' points to <br \>
+        a = "this is a string"
+        b = a      \# 'b' refers to the same String object as 'a' <br \>
+        a << "!"   \# modifies the String object 'a' points to <br \>
 
-    "this is a string!" == a
+        "this is a string!" == a
 
-    \# You should understand why the following statements are true:<br \>
-    "this is a string!" == b
-    "this is a string" != b
+        \# You should understand why the following statements are true:<br \>
+        "this is a string!" == b
+        "this is a string" != b
 
 ### Notations/Conventions
 * Ruby method documentation references (should be the same as Ruby documentation)
