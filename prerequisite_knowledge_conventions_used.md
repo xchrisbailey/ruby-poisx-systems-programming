@@ -18,7 +18,7 @@ Prerequisite Knowledge
 
     "this is a string!" == a
 
-    \# You should understand why the following statements are true:
+    \# You should understand why the following statements are true:<br \>
     "this is a string!" == b
     "this is a string" != b
 
