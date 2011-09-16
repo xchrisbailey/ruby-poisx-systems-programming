@@ -17,7 +17,8 @@ Modern Unix systems have two distinct software layers: User space and kernel spa
 
 As you can see, the kernel acts as a mediator for user space and the underlying hardware.
 
-    [1] however, "POSIX-compliant" does not guarantee a system is Unix or even "Unix-like". Old Unix systems are not "POSIX-compliant", either.
+    [1] however, "POSIX-compliant" does not guarantee a system is Unix or even "Unix-like". Old Unix systems are not 
+    "POSIX-compliant", either.
 
 ### What is Unix Systems Programming?
 Unix and Unix-like operating systems share a set of common programming interfaces for user space to interact with the kernel (and in turn, hardware).  These interfaces are referred to as "system calls"[2] or "syscalls".
@@ -26,7 +27,8 @@ We will (hopefully) learn to interact with Unix and Unix-like operating systems 
 
 Unix systems programming is often thought of as "plumbing" as it deals with basic infrastructure and data flow in and out of the system.  Given Unix is responsible for much of the Internet, the Internet _can_ be thought of as a series of tubes :)
 
-    [2] - This is absolutely NOT the Kernel#system method in Ruby nor the corresponding C library system(3) function, though we'll cover those later.
+    [2] - This is absolutely NOT the Kernel#system method in Ruby nor the corresponding C library system(3) function, 
+    though we'll cover those later.
 
 ### Why Unix?
 Unix and Unix-like systems are everywhere.  From traditional deployments on workstations and servers to smartphones and tablets, Unix and its clones have become pervasive in the world of computing over the past four decades and shows no sign of decline.
