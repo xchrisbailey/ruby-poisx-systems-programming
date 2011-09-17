@@ -1,6 +1,5 @@
 # A Fluffy Introduction to Unix Systems Programming in Ruby
-
-## Systems programming for Unix and Unix-like systems using Ruby
+### Systems programming for Unix and Unix-like systems using Ruby
 >>(This is a introductory/overview material, more in-depth coverage can be
 >>readily be found on the Internet outside of this list)
 
