@@ -23,11 +23,28 @@ file descriptor.
 
 There are at least four distinct layers of buffering within a machine.
 
-    Application buffers     - what your application sees
-    Library buffers         - implemented by Ruby or libc
-    ----------------- kernel-user space boundary -----------------
-    Kernel software buffers
-    Hardware buffers
+    process[0]  | process[1]  | process[2]  | ... process[N]
+    ------------+-------------+-------------+---------------
+    App buffers | App buffers | App buffers | ...
+    Lib buffers | Lib buffers | Lib buffers | ...
+    ------------- kernel-user space boundary ---------------
+                    Kernel software buffers
+                       Hardware buffers
+
+User space buffers are not shared between different processes in Ruby.
+
+Kernel buffers are shared, allowing read(2)-after-write(2) consistency
+between different processes.  This is one (of many) ways for cooperating
+processes to share data.
+
+A few applications[1] may manage process-shared buffers in user space,
+but (stock) Ruby does not have this.
+
+Library buffers (like most memory) in the Ruby IO class /are/ shared
+between different Threads and Fibers in Ruby.
+
+Sharing of application buffers between Threads/Fibers is possible but
+usually not a good idea.  It is of course, application-dependent.
 
 Buffers may be implemented for both reading and writing.
 
